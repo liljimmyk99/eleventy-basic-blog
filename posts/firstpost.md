@@ -1,26 +1,20 @@
 ---
-title: This is my first post.
+title: Installing open-wc on MacOS.
 description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
+date: 2022-02-22
 tags:
-  - another tag
+  - opensource
+  - npm
+  - node
 layout: layouts/post.njk
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+In order to install open-wc we need to install some software, namely NodeJS/npm, and yarn.  We will start with NodeJS. First, navigate to https://nodejs.org/en/ and install the LTS version, at the time of writing that is 14.17.5.  Once the installer finishes downloading, open it and follow the prompts.  If npm is already installed on your machine preform the `npm install -g npm@latest` to install the latest version of NPM
 
-## Section Header
+Upon completion of installing Node, open Terminal and type in the following commands: `node -v` and `npm -v` to verify that your installation was successful.  
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+To install yarn, open terminal type the following command: `curl -o- -L https://yarnpkg.com/install.sh | bash `.  Upon the completion of the command preform the following command to verify installation: `yarn -v`.
 
-``` text/2-3
-// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
-}
+With our dependencies installed, let’s create a test project called “hello-world”.  Let’s change directories such as Documents.  Open termainal and type `cd Documents`.  Type ‘pwd’ to verify the output is `/Users/<Your User Name>/Documents`.  Then type `npm init @open-wc` and select the following options: Scaffold a new project, Web Component, enable Linting, Testing, and Demoing, do NOT use typescript, name it hello-world, select yes to write files to your hard drive, and Yes with Yarn.
 
-// Test with a line break above this line.
-console.log('Test');
-```
+To verify the project worked, type the following commands `cd hello-world` and then `npm start`.  If your web browser opens, then your job is done.  To stop the project, return to terminal and hit ‘control’ + ‘c’
