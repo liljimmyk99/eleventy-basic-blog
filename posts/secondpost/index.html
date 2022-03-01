@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component Framework Breakdown.</title>
+    <meta name="description" content="Different JS Frameworks for development.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Lab 6: 11ty">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Lab 6: 11ty">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="/">Lab 6: 11ty</a></h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/about/">About Me</a></li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+
+      <!-- Delete this message -->
+      <div class="warning">
+        <ol>
+          <li>Edit the <code>_data/metadata.json</code> with your blog’s information.</li>
+          <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
+          <li>Delete this message from <code>_includes/layouts/base.njk</code>.</li>
+        </ol>
+        <p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
+      </div>
+      <!-- Stop deleting -->
+
+      <h1>Web Component Framework Breakdown.</h1>
+
+<time datetime="2021-09-12">12 Sep 2021</time><a href="/tags/web-component/" class="post-tag">Web-Component</a><a href="/tags/javascript/" class="post-tag">JavaScript</a><a href="/tags/node/" class="post-tag">node</a>
+
+<p>This week in my Web Components class, we looked into 4 popular Web Component Frameworks: Angular, React, StencilJS, and VueJS.  Each group member took one framework and followed the boilerplate/&quot;Hello World&quot; example to understand how projects in these frameworks are structured.  Below I will show the results of our research and testing as well as providing my personal opinions on a framework I would use.</p>
+<p>Across all four frameworks, there were some similarities to the way they worked.  All four use JavaScript to create/define their components as well as the interactions with them.  Stencil JS does use TypeScript files however TypeScript is then translated to JavaScript.  The frameworks also have a similar file structure in a sense that each component is given it's own directory to be defined within the project.  What is in these directories varies by project.  Most use a JavaScript function and returns that return HTML but VueJS uses.Vue Files instead.  Lastly, all of these frameworks have a base index.html file which is where all the custom components are added to/called.</p>
+<p>Based on looking at these frameworks, I think VueJS has the easiest development experience because it has the fewest amount of files out of all four frameworks.  I found when looking at the boilerplates for these frameworks, I easily understood where everything was in the VueJS directory.  I did not need to dig very far to find where the custom component was defined and what files interacted with it.  Since I have not used it to build anything, I don't know if can efficiently handle interactions like in other frameworks.  I have heard of React and Angular from my previous internships, but I have not heard of VueJS before.  This leads me to wonder how vast the development community is.</p>
+<p>With a few finds from our research, I would probably work with React to build an application.  I know from personal experience that the react community is vast.  The JavaScript files declaring components looks like HTML and is easy to understand what the code does.  I also can easily follow the file structure of this project, there are more files than VueJS, but it is still easy to follow along.</p>
+<p>To view the boilerplates my group generated, please visit our GitHub Repo here: <a href="https://github.com/3B4B/boilerplates">https://github.com/3B4B/boilerplates</a></p>
+
+<hr>
+<ul><li>Next: <a href="/posts/thirdpost/">My Possible Futures.</a></li>
+</ul>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Current page: /posts/secondpost/ -->
+  </body>
+</html>

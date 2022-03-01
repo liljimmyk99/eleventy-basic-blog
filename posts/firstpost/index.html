@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installing open-wc on MacOS.</title>
+    <meta name="description" content="This is a post on My Blog about agile frameworks.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Lab 6: 11ty">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Lab 6: 11ty">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="/">Lab 6: 11ty</a></h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/about/">About Me</a></li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+
+      <!-- Delete this message -->
+      <div class="warning">
+        <ol>
+          <li>Edit the <code>_data/metadata.json</code> with your blog’s information.</li>
+          <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
+          <li>Delete this message from <code>_includes/layouts/base.njk</code>.</li>
+        </ol>
+        <p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
+      </div>
+      <!-- Stop deleting -->
+
+      <h1>Installing open-wc on MacOS.</h1>
+
+<time datetime="2022-02-22">22 Feb 2022</time><a href="/tags/opensource/" class="post-tag">opensource</a><a href="/tags/npm/" class="post-tag">npm</a><a href="/tags/node/" class="post-tag">node</a>
+
+<p>In order to install open-wc we need to install some software, namely NodeJS/npm, and yarn.  We will start with NodeJS. First, navigate to <a href="https://nodejs.org/en/">https://nodejs.org/en/</a> and install the LTS version, at the time of writing that is 14.17.5.  Once the installer finishes downloading, open it and follow the prompts.  If npm is already installed on your machine preform the <code>npm install -g npm@latest</code> to install the latest version of NPM</p>
+<p>Upon completion of installing Node, open Terminal and type in the following commands: <code>node -v</code> and <code>npm -v</code> to verify that your installation was successful.</p>
+<p>To install yarn, open terminal type the following command: <code>curl -o- -L https://yarnpkg.com/install.sh | bash </code>.  Upon the completion of the command preform the following command to verify installation: <code>yarn -v</code>.</p>
+<p>With our dependencies installed, let’s create a test project called “hello-world”.  Let’s change directories such as Documents.  Open termainal and type <code>cd Documents</code>.  Type ‘pwd’ to verify the output is <code>/Users/&lt;Your User Name&gt;/Documents</code>.  Then type <code>npm init @open-wc</code> and select the following options: Scaffold a new project, Web Component, enable Linting, Testing, and Demoing, do NOT use typescript, name it hello-world, select yes to write files to your hard drive, and Yes with Yarn.</p>
+<p>To verify the project worked, type the following commands <code>cd hello-world</code> and then <code>npm start</code>.  If your web browser opens, then your job is done.  To stop the project, return to terminal and hit ‘control’ + ‘c’</p>
+
+<hr>
+<ul><li>Previous: <a href="/posts/thirdpost/">My Possible Futures.</a></li>
+</ul>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Current page: /posts/firstpost/ -->
+  </body>
+</html>

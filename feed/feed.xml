@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Lab 6: 11ty</title>
+	<subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
+	
+	<link href="https://example.com/feed/feed.xml" rel="self"/>
+	<link href="https://example.com/"/>
+	<updated>2022-02-22T00:00:00Z</updated>
+	<id>https://example.com/</id>
+	<author>
+		<name>Your Name Here</name>
+		<email>youremailaddress@example.com</email>
+	</author>
+	
+	<entry>
+		<title>Installing open-wc on MacOS.</title>
+		<link href="https://example.com/posts/firstpost/"/>
+		<updated>2022-02-22T00:00:00Z</updated>
+		<id>https://example.com/posts/firstpost/</id>
+		<content type="html">&lt;p&gt;In order to install open-wc we need to install some software, namely NodeJS/npm, and yarn.  We will start with NodeJS. First, navigate to &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;https://nodejs.org/en/&lt;/a&gt; and install the LTS version, at the time of writing that is 14.17.5.  Once the installer finishes downloading, open it and follow the prompts.  If npm is already installed on your machine preform the &lt;code&gt;npm install -g npm@latest&lt;/code&gt; to install the latest version of NPM&lt;/p&gt;
+&lt;p&gt;Upon completion of installing Node, open Terminal and type in the following commands: &lt;code&gt;node -v&lt;/code&gt; and &lt;code&gt;npm -v&lt;/code&gt; to verify that your installation was successful.&lt;/p&gt;
+&lt;p&gt;To install yarn, open terminal type the following command: &lt;code&gt;curl -o- -L https://yarnpkg.com/install.sh | bash &lt;/code&gt;.  Upon the completion of the command preform the following command to verify installation: &lt;code&gt;yarn -v&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;With our dependencies installed, let’s create a test project called “hello-world”.  Let’s change directories such as Documents.  Open termainal and type &lt;code&gt;cd Documents&lt;/code&gt;.  Type ‘pwd’ to verify the output is &lt;code&gt;/Users/&amp;lt;Your User Name&amp;gt;/Documents&lt;/code&gt;.  Then type &lt;code&gt;npm init @open-wc&lt;/code&gt; and select the following options: Scaffold a new project, Web Component, enable Linting, Testing, and Demoing, do NOT use typescript, name it hello-world, select yes to write files to your hard drive, and Yes with Yarn.&lt;/p&gt;
+&lt;p&gt;To verify the project worked, type the following commands &lt;code&gt;cd hello-world&lt;/code&gt; and then &lt;code&gt;npm start&lt;/code&gt;.  If your web browser opens, then your job is done.  To stop the project, return to terminal and hit ‘control’ + ‘c’&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>My Possible Futures.</title>
+		<link href="https://example.com/posts/thirdpost/"/>
+		<updated>2021-11-07T00:00:00Z</updated>
+		<id>https://example.com/posts/thirdpost/</id>
+		<content type="html">&lt;p&gt;We all have ideas of what the future could look like. We all have ideas to make the future better. We all have dreams about what could happen. For me, I ponder what if I could do X thing. If I could build an app, website, or technology of any kind, What would it do? A little background on me, I run the Penn State College of Information Sciences and Technology Peer Tutoring program. I have been in this role for the past 3 years now and it gives me a source of great pride for me to help my fellow peers. A personal project for me would to build a college-specific tutoring video library. This service would be similar to LinkedIn Learning where a student would select a course and follow along with the modules, but the module has short videos and links going over each topic. Each topic would be explained in a few different ways to match different learning modes and provide the best possible asynchronous tutoring experience. My goal is to provide a tutoring experience to all college students regardless of whether or not they have access to an in-person tutor. Similar to how students are automatically added to their learning management system&#39;s courses, students would have access to our service the same way. Students would go to their course, select the tutoring tab, and select the topic they are struggling with.&lt;/p&gt;
+&lt;p&gt;Outside of an application development lens; if money and time were of no concern; what would I do with my life and the skills I&#39;ve assembled if I could dedicate it to one thing? I would create a trades school with &amp;quot;majors&amp;quot; in fields students could have a future in. These majors would be in subjects where good-paying jobs are common and may not be traditional college majors. Automotive technician, diesel technician, electrician, plumbing, programming, accounting, cyber security, among many others. The school would focus on real-world problems, experience, and building a portfolio. I feel that college inadvertently locks undecided students into believing a typical college education is the only way to go. I know it&#39;s not the case and I want a school that gives students a way to know if a trade is their favorite career path or college. I probably can say if I went to this type of school, I don&#39;t know if I would be a programmer since I love to work with my hands. If I can make anyone&#39;s career choice easier than mine, I would be fulfilled professionally!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Web Component Framework Breakdown.</title>
+		<link href="https://example.com/posts/secondpost/"/>
+		<updated>2021-09-12T00:00:00Z</updated>
+		<id>https://example.com/posts/secondpost/</id>
+		<content type="html">&lt;p&gt;This week in my Web Components class, we looked into 4 popular Web Component Frameworks: Angular, React, StencilJS, and VueJS.  Each group member took one framework and followed the boilerplate/&amp;quot;Hello World&amp;quot; example to understand how projects in these frameworks are structured.  Below I will show the results of our research and testing as well as providing my personal opinions on a framework I would use.&lt;/p&gt;
+&lt;p&gt;Across all four frameworks, there were some similarities to the way they worked.  All four use JavaScript to create/define their components as well as the interactions with them.  Stencil JS does use TypeScript files however TypeScript is then translated to JavaScript.  The frameworks also have a similar file structure in a sense that each component is given it&#39;s own directory to be defined within the project.  What is in these directories varies by project.  Most use a JavaScript function and returns that return HTML but VueJS uses.Vue Files instead.  Lastly, all of these frameworks have a base index.html file which is where all the custom components are added to/called.&lt;/p&gt;
+&lt;p&gt;Based on looking at these frameworks, I think VueJS has the easiest development experience because it has the fewest amount of files out of all four frameworks.  I found when looking at the boilerplates for these frameworks, I easily understood where everything was in the VueJS directory.  I did not need to dig very far to find where the custom component was defined and what files interacted with it.  Since I have not used it to build anything, I don&#39;t know if can efficiently handle interactions like in other frameworks.  I have heard of React and Angular from my previous internships, but I have not heard of VueJS before.  This leads me to wonder how vast the development community is.&lt;/p&gt;
+&lt;p&gt;With a few finds from our research, I would probably work with React to build an application.  I know from personal experience that the react community is vast.  The JavaScript files declaring components looks like HTML and is easy to understand what the code does.  I also can easily follow the file structure of this project, there are more files than VueJS, but it is still easy to follow along.&lt;/p&gt;
+&lt;p&gt;To view the boilerplates my group generated, please visit our GitHub Repo here: &lt;a href=&quot;https://github.com/3B4B/boilerplates&quot;&gt;https://github.com/3B4B/boilerplates&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+</feed>
